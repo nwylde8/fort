@@ -43,20 +43,4 @@ jobs:
            --detect.detector.search.depth=3 \
            --detect.blackduck.signature.scanner.exclusion.name.pattern=.git,node_modules \
            '
-#       - name: Commit changes
-#         uses: EndBug/add-and-commit@v4
-#         with:
-#           author_name: Scan Bot
-#           author_email: scan@bot
-#           message: "new scan report"
-#           add: "*.txt"
-#           ref: 'release'
-#         env:
-#           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}           
-           
-
-# --detect.notices.report=true \
-# --detect.detector.search.depth=3 \
-# --detect.npm.include.dev.dependencies=false \
-# --detect.policy.check.fail.on.severities=CRITICAL \
 
